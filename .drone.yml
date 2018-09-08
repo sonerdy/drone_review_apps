@@ -6,4 +6,8 @@ pipeline:
     tags: latest
     dockerfile: Dockerfile
     secrets: [ docker_username, docker_password ]
+  output_vars:
+    image: brandonjoyce/drone_review_apps
+    commands:
+      - env
 
