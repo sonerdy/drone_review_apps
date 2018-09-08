@@ -7,9 +7,10 @@ pipeline:
     dockerfile: Dockerfile
     secrets: [ docker_username, docker_password ]
 
-  output_vars:
+  test_drone_review:
     image: sonerdy/drone-review-apps
-    commands:
-      - env
+    top_level_config: testvalue
+    nested_config:
+      im_in_here: hereiam
     secrets: [ digital_ocean_access_token ]
 
