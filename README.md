@@ -7,7 +7,7 @@ Add to your .drone.yml
 ```
 pipeline:
   deploy:
-    image: sonerdy/drone_review_apps
+    image: sonerdy/drone-review-apps
     expires_in_days: 5
     digital_ocean:
       image: docker-16-04

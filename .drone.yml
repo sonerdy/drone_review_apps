@@ -2,14 +2,13 @@
 pipeline:
   push_image:
     image: plugins/docker
-    repo: sonerdy/drone_review_apps
+    repo: sonerdy/drone-review-apps
     tags: latest
     dockerfile: Dockerfile
     secrets: [ docker_username, docker_password ]
 
   output_vars:
-    image: sonerdy/drone_review_apps
+    image: sonerdy/drone-review-apps
     commands:
-      - env
       - env
 
