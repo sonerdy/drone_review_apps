@@ -11,4 +11,5 @@ pipeline:
     image: sonerdy/drone-review-apps
     commands:
       - env
+    secrets: [ digital_ocean_access_token ]
 
