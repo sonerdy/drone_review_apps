@@ -11,4 +11,5 @@ pipeline:
     image: sonerdy/drone_review_apps
     commands:
       - env
+      - env
 
