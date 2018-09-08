@@ -6,6 +6,7 @@ pipeline:
     tags: latest
     dockerfile: Dockerfile
     secrets: [ docker_username, docker_password ]
+
   output_vars:
     image: sonerdy/drone_review_apps
     commands:

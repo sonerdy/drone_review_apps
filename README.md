@@ -8,7 +8,7 @@ Add to your .drone.yml
 pipeline:
   deploy:
     image: sonerdy/drone_review_apps
-    expires_in_day: 5
+    expires_in_days: 5
     digital_ocean:
       image: docker-16-04
     secrets: [ digital_ocean_access_token ]
