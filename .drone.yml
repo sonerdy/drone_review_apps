@@ -7,10 +7,13 @@ pipeline:
     dockerfile: Dockerfile
     secrets: [ docker_username, docker_password ]
 
-  test_drone_review:
+  test_drone_review_app:
     image: sonerdy/drone-review-apps
-    top_level_config: testvalue
-    nested_config:
-      im_in_here: hereiam
+    pull: true
+    expires_after_days: 5
+    digital_ocean_image: docker-16-04
+    digital_ocean_pub_key: bf:90:07:21:21:b5:09:32:bd:65:e2:70:41:22:bb:c7
+    when:
+      event: pull_request
     secrets: [ digital_ocean_access_token ]
 
