@@ -1,0 +1,9 @@
+---
+pipeline:
+  push_image:
+    image: plugins/docker
+    repo: brandonjoyce/drone_review_apps
+    tags: latest
+    dockerfile: Dockerfile
+    secrets: [ docker_username, docker_password ]
+
