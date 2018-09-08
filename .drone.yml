@@ -12,8 +12,8 @@ pipeline:
     pull: true
     expires_after_days: 5
     digital_ocean_image: docker-16-04
-    digital_ocean_pub_key: bf:90:07:21:21:b5:09:32:bd:65:e2:70:41:22:bb:c7
+    digital_ocean_pub_key: "bf:90:07:21:21:b5:09:32:bd:65:e2:70:41:22:bb:c7"
     when:
-      event: pull_request
+      event: [push, pull_request]
     secrets: [ digital_ocean_access_token ]
 
