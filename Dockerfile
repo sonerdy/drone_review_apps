@@ -10,8 +10,8 @@ RUN mv /root/doctl /usr/local/bin
 
 WORKDIR /
 
-ADD entrypoint.sh entrypoint.sh
-ADD review_app.yml review_app.yml
+ADD ./entrypoint.sh /entrypoint.sh
+ADD ./review_app.yml /review_app.yml
 
-ENTRYPOINT entrypoint.sh
+ENTRYPOINT /entrypoint.sh
 
